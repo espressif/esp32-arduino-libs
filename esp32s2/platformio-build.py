@@ -52,7 +52,7 @@ env.Append(
     ],
 
     CXXFLAGS=[
-        "-std=gnu++20",
+        "-std=gnu++2b",
         "-fexceptions",
         "-fno-rtti"
     ],
@@ -336,7 +336,7 @@ env.Append(
 
     CPPDEFINES=[
         "ESP_PLATFORM",
-        ("IDF_VER", '\\"v5.1-dev-4784-g6cfc6f53be\\"'),
+        ("IDF_VER", '\\"v5.1-dev-4870-ged32d7a267\\"'),
         ("MBEDTLS_CONFIG_FILE", '\\"mbedtls/esp_config.h\\"'),
         ("SOC_MMU_PAGE_SIZE", 'CONFIG_MMU_PAGE_SIZE'),
         "UNITY_INCLUDE_CONFIG_H",
