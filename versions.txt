@@ -1,5 +1,5 @@
-esp-idf: release/v5.1 ed32d7a267
-arduino: idf-release/v5.1 7610a62d
+esp-idf: release/v5.1 56677dabe8
+arduino: idf-release/v5.1 bdb2be1c
 esp-dl: master 0632d24
 esp-insights: main d8b2dfc
 esp-rainmaker: master c0da237
