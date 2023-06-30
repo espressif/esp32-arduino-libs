@@ -2272,19 +2272,6 @@ CONFIG_RTC_STORE_REPORTING_WATERMARK_PERCENT=80
 # end of RTC Store
 
 #
-# Diagnostics data store
-#
-CONFIG_DIAG_DATA_STORE_RTC=y
-# CONFIG_DIAG_DATA_STORE_FLASH is not set
-CONFIG_DIAG_DATA_STORE_REPORTING_WATERMARK_PERCENT=80
-
-#
-# RTC Store
-#
-# end of RTC Store
-# end of Diagnostics data store
-
-#
 # GPIO Button
 #
 CONFIG_IO_GLITCH_FILTER_TIME_MS=50
