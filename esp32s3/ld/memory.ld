@@ -28,6 +28,7 @@ _esp_memprot_prefetch_pad_size = 16;
 /* Memory alignment size for PMS */
 _esp_memprot_align_size = 256;
 _esp_mmu_block_size = (0x10000);
+    /* rtc timer data (s_rtc_timer_retain_mem, see esp_clk.c files). For rtc_timer_data_in_rtc_mem section. */
 /*
  * 40370000 <- IRAM/Icache -> 40378000 <- D/IRAM (I) -> 403E0000
  *                            3FC88000 <- D/IRAM (D) -> 3FCF0000 <- DRAM/DCache -> 3FD00000
@@ -68,7 +69,15 @@ MEMORY
   /**
    * RTC fast memory (executable). Persists over deep sleep.
    */
-  rtc_iram_seg(RWX) : org = 0x600fe000, len = 0x2000 - (0x10)
+  rtc_iram_seg(RWX) : org = 0x600fe000, len = 0x2000 - ((0x10) + (24))
+  /* We reduced the size of rtc_iram_seg by RESERVE_RTC_MEM value.
+     It reserves the amount of RTC fast memory that we use for this memory segment.
+     This segment is intended for keeping:
+       - (lower addr) rtc timer data (s_rtc_timer_retain_mem, see esp_clk.c files).
+       - (higher addr) bootloader rtc data (s_bootloader_retain_mem, when a Kconfig option is on).
+     The aim of this is to keep data that will not be moved around and have a fixed address.
+  */
+  rtc_reserved_seg(RW) : org = 0x600fe000 + 0x2000 - ((0x10) + (24)), len = ((0x10) + (24))
   /**
    * RTC slow memory (data accessible). Persists over deep sleep.
    * Start of RTC slow memory is reserved for ULP co-processor code + data, if enabled.

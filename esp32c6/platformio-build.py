@@ -124,6 +124,7 @@ env.Append(
         "-u", "start_app",
         "-u", "__ubsan_include",
         "-u", "__assert_func",
+        "-u", "esp_crypto_dpa_prot_include_impl",
         "-u", "app_main",
         "-u", "newlib_include_heap_impl",
         "-u", "newlib_include_syscalls_impl",
@@ -349,7 +350,7 @@ env.Append(
 
     CPPDEFINES=[
         "ESP_PLATFORM",
-        ("IDF_VER", '\\"v5.1\\"'),
+        ("IDF_VER", '\\"v5.1-210-gf1b9af72fd\\"'),
         ("MBEDTLS_CONFIG_FILE", '\\"mbedtls/esp_config.h\\"'),
         ("SOC_MMU_PAGE_SIZE", 'CONFIG_MMU_PAGE_SIZE'),
         "UNITY_INCLUDE_CONFIG_H",

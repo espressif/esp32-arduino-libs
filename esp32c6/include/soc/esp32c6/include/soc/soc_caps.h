@@ -426,6 +426,9 @@
 #define SOC_FLASH_ENCRYPTION_XTS_AES        1
 #define SOC_FLASH_ENCRYPTION_XTS_AES_128    1
 
+/*------------------------ Anti DPA (Security) CAPS --------------------------*/
+#define SOC_CRYPTO_DPA_PROTECTION_SUPPORTED     1
+
 /*-------------------------- UART CAPS ---------------------------------------*/
 // ESP32-C6 has 2 UARTs
 #define SOC_UART_NUM                    (2)
@@ -475,6 +478,7 @@
 
 #define SOC_PM_CPU_RETENTION_BY_SW          (1)
 #define SOC_PM_MODEM_RETENTION_BY_REGDMA    (1)
+#define SOC_PM_RETENTION_HAS_CLOCK_BUG      (1)
 
 #define SOC_PM_PAU_LINK_NUM             (4)
 

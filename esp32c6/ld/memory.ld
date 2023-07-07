@@ -28,6 +28,7 @@ _esp_memprot_prefetch_pad_size = 0;
 /* Memory alignment size for PMS */
 _esp_memprot_align_size = 0;
 _esp_mmu_block_size = (0x10000);
+    /* rtc timer data (s_rtc_timer_retain_mem, see esp_clk.c files). For rtc_timer_data_in_rtc_mem section. */
 /**
  * physical memory is mapped twice to the vritual address (IRAM and DRAM).
  * `I_D_SRAM_OFFSET` is the offset between the two locations of the same physical memory
@@ -64,7 +65,15 @@ MEMORY
   /**
    * lp ram memory (RWX). Persists over deep sleep. // TODO: IDF-5667
    */
-  lp_ram_seg(RW) : org = 0x50000000 , len = 0x4000 - (0x10)
+  lp_ram_seg(RW) : org = 0x50000000, len = 0x4000 - ((0x10) + (24))
+  /* We reduced the size of lp_ram_seg by RESERVE_RTC_MEM value.
+     It reserves the amount of LP memory that we use for this memory segment.
+     This segment is intended for keeping:
+       - (lower addr) rtc timer data (s_rtc_timer_retain_mem, see esp_clk.c files).
+       - (higher addr) bootloader rtc data (s_bootloader_retain_mem, when a Kconfig option is on).
+     The aim of this is to keep data that will not be moved around and have a fixed address.
+  */
+  lp_reserved_seg(RW) : org = 0x50000000 + 0x4000 - ((0x10) + (24)), len = ((0x10) + (24))
 }
 /* Heap ends at top of dram0_0_seg */
 _heap_end = 0x40000000;
@@ -78,6 +87,7 @@ REGION_ALIAS("rtc_iram_seg", lp_ram_seg );
 REGION_ALIAS("rtc_data_seg", rtc_iram_seg );
 REGION_ALIAS("rtc_slow_seg", rtc_iram_seg );
 REGION_ALIAS("rtc_data_location", rtc_iram_seg );
+REGION_ALIAS("rtc_reserved_seg", lp_reserved_seg );
   REGION_ALIAS("default_code_seg", irom_seg);
   REGION_ALIAS("default_rodata_seg", drom_seg);
 /**
