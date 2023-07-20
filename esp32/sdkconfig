@@ -1,6 +1,6 @@
 #
 # Automatically generated file. DO NOT EDIT.
-# Espressif IoT Development Framework (ESP-IDF) Project Configuration
+# Espressif IoT Development Framework (ESP-IDF) 5.1.0 Project Configuration
 #
 CONFIG_SOC_BROWNOUT_RESET_SUPPORTED="Not determined"
 CONFIG_SOC_TWAI_BRP_DIV_SUPPORTED="Not determined"
@@ -404,6 +404,14 @@ CONFIG_ESP_RMAKER_CMD_RESP_ENABLE=y
 # CONFIG_ESP_RMAKER_CMD_RESP_TEST_ENABLE is not set
 # end of ESP RainMaker Command-Response
 # end of ESP RainMaker Config
+
+#
+# ESP-NN
+#
+# CONFIG_NN_ANSI_C is not set
+CONFIG_NN_OPTIMIZED=y
+CONFIG_NN_OPTIMIZATIONS=1
+# end of ESP-NN
 
 #
 # Arduino Configuration
@@ -2120,6 +2128,18 @@ CONFIG_IO_GLITCH_FILTER_TIME_MS=50
 # end of WS2812 RGB LED
 
 #
+# Bus Options
+#
+
+#
+# I2C Bus Options
+#
+CONFIG_I2C_BUS_DYNAMIC_CONFIG=y
+CONFIG_I2C_MS_TO_WAIT=200
+# end of I2C Bus Options
+# end of Bus Options
+
+#
 # Camera configuration
 #
 CONFIG_OV7670_SUPPORT=y
@@ -2147,6 +2167,29 @@ CONFIG_CAMERA_CORE0=y
 # CONFIG_CAMERA_NO_AFFINITY is not set
 CONFIG_CAMERA_DMA_BUFFER_SIZE_MAX=32768
 # end of Camera configuration
+
+#
+# LCD Drivers
+#
+
+#
+# Select Screen Controller
+#
+CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_ILI9341=y
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_ILI9486 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_ILI9806 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_ILI9488 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_NT35510 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_RM68120 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_SSD1351 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_SSD1963 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_ST7789 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_ST7796 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_SSD1306 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_SSD1307 is not set
+# CONFIG_LCD_DRIVER_SCREEN_CONTROLLER_SSD1322 is not set
+# end of Select Screen Controller
+# end of LCD Drivers
 
 #
 # LittleFS
