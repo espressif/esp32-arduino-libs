@@ -1,5 +1,5 @@
 esp-idf: release/v5.1 3187b8b326
-arduino: esp-idf-v5.1-libs 8cf62943
+arduino: esp-idf-v5.1-libs e343918d
 esp-dl: master 0632d24
 esp-rainmaker: master 9117365
 esp-sr: master 455314a
