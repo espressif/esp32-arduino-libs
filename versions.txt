@@ -6,4 +6,4 @@ esp-sr: master 455314a
 esp32-camera: master c0c17bd
 esp_littlefs: master 8fb0290
 tflite-micro: master 1ccd7e1
-tinyusb: master 8fa0b74d8
+tinyusb: master 9554283b0
