@@ -365,6 +365,7 @@ env.Append(
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "esp-dl", "include", "image"),
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "esp-dl", "include", "math"),
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "esp-dl", "include", "nn"),
+        join(FRAMEWORK_SDK_DIR, "esp32", "include", "esp-dl", "include", "tvm"),
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "esp-dl", "include", "layer"),
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "esp-dl", "include", "detect"),
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "esp-dl", "include", "model_zoo"),
@@ -384,10 +385,9 @@ env.Append(
 
     CPPDEFINES=[
         "ESP_PLATFORM",
-        ("IDF_VER", '\\"v5.1-480-g79b1379662\\"'),
+        ("IDF_VER", '\\"v5.1-552-g3fd0eff833\\"'),
         ("MBEDTLS_CONFIG_FILE", '\\"mbedtls/esp_config.h\\"'),
         ("SOC_MMU_PAGE_SIZE", 'CONFIG_MMU_PAGE_SIZE'),
-        ("SOC_XTAL_FREQ_MHZ", 'CONFIG_XTAL_FREQ'),
         "UNITY_INCLUDE_CONFIG_H",
         "_GNU_SOURCE",
         "_POSIX_READER_WRITER_LOCKS",
