@@ -19,7 +19,9 @@ extern "C" {
  * @brief MCPWM operator configuration
  */
 typedef struct {
-    int group_id; /*!< Specify from which group to allocate the MCPWM operator */
+    int group_id;                              /*!< Specify from which group to allocate the MCPWM operator */
+    int intr_priority;                         /*!< MCPWM operator interrupt priority,
+                                                    if set to 0, the driver will try to allocate an interrupt with a relative low priority (1,2,3) */
     struct {
         uint32_t update_gen_action_on_tez: 1;  /*!< Whether to update generator action when timer counts to zero */
         uint32_t update_gen_action_on_tep: 1;  /*!< Whether to update generator action when timer counts to peak */
@@ -135,6 +137,7 @@ esp_err_t mcpwm_operator_register_event_callbacks(mcpwm_oper_handle_t oper, cons
  * @brief MCPWM carrier configuration structure
  */
 typedef struct {
+    mcpwm_carrier_clock_source_t clk_src;  /*!< MCPWM carrier clock source */
     uint32_t frequency_hz;            /*!< Carrier frequency in Hz */
     uint32_t first_pulse_duration_us; /*!< The duration of the first PWM pulse, in us */
     float duty_cycle;                 /*!< Carrier duty cycle */
