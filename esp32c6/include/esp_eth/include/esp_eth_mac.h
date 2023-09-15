@@ -480,7 +480,7 @@ esp_eth_mac_t *esp_eth_mac_new_esp32(const eth_esp32_emac_config_t *esp32_config
 typedef struct
 {
     /**
-     * @brief Custom driver specific configuration structure used by `init()` function.
+     * @brief Custom driver specific configuration data used by `init()` function.
      *
      * @note Type and its content is fully under user's control
      *
@@ -557,13 +557,13 @@ typedef struct
  * Internal ESP-IDF SPI Master driver is used by default.
  *
  */
-#define ETH_NO_CUSTOM_SPI                   \
-    {                                       \
-        .config = NULL,                     \
-        .init = NULL,                       \
-        .deinit = NULL,                     \
-        .read = NULL,                       \
-        .write = NULL                       \
+#define ETH_DEFAULT_SPI  \
+    {                    \
+        .config = NULL,  \
+        .init = NULL,    \
+        .deinit = NULL,  \
+        .read = NULL,    \
+        .write = NULL    \
     }
 #endif // CONFIG_ETH_USE_SPI_ETHERNET
 
@@ -588,7 +588,7 @@ typedef struct {
         .int_gpio_num = 4,                      \
         .spi_host_id = spi_host,                \
         .spi_devcfg = spi_devcfg_p,             \
-        .custom_spi_driver = ETH_NO_CUSTOM_SPI, \
+        .custom_spi_driver = ETH_DEFAULT_SPI, \
     }
 
 /**
@@ -625,7 +625,7 @@ typedef struct {
         .int_gpio_num = 4,                      \
         .spi_host_id = spi_host,                \
         .spi_devcfg = spi_devcfg_p,             \
-        .custom_spi_driver = ETH_NO_CUSTOM_SPI, \
+        .custom_spi_driver = ETH_DEFAULT_SPI, \
     }
 
 /**
@@ -662,7 +662,7 @@ typedef struct {
         .int_gpio_num = 4,                          \
         .spi_host_id = spi_host,                    \
         .spi_devcfg = spi_devcfg_p,                 \
-        .custom_spi_driver = ETH_NO_CUSTOM_SPI,     \
+        .custom_spi_driver = ETH_DEFAULT_SPI,     \
     }
 
 /**
