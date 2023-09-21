@@ -113,7 +113,7 @@ env.Append(
         "-u", "_Z4loopv",
         "-u", "esp_app_desc",
         "-u", "pthread_include_pthread_impl",
-        "-u", "pthread_include_pthread_cond_impl",
+        "-u", "pthread_include_pthread_cond_var_impl",
         "-u", "pthread_include_pthread_local_storage_impl",
         "-u", "pthread_include_pthread_rwlock_impl",
         "-u", "pthread_include_pthread_semaphore_impl",
@@ -356,7 +356,7 @@ env.Append(
 
     CPPDEFINES=[
         "ESP_PLATFORM",
-        ("IDF_VER", '\\"v5.1.1-393-g7698a413bc-dirty\\"'),
+        ("IDF_VER", '\\"v5.1.1-439-gcb174b0fe1-dirty\\"'),
         ("MBEDTLS_CONFIG_FILE", '\\"mbedtls/esp_config.h\\"'),
         ("SOC_MMU_PAGE_SIZE", 'CONFIG_MMU_PAGE_SIZE'),
         "UNITY_INCLUDE_CONFIG_H",
