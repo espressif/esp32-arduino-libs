@@ -1,9 +1,4 @@
-esp-idf: release/v5.1 8c6114d0d2
-arduino: idf-release/v5.1 f1c01583
-esp-dl: master ed715c0
-esp-rainmaker: master d8e9345
-esp-sr: master e4e8542
-esp32-camera: master efe711d
-esp_littlefs: master b671069
-tflite-micro: master fa8c6c9
-tinyusb: master a2390802f
+esp-idf: release/v5.1 b6a66b7d8c
+arduino: master 6b287db1
+esp-dl: master 79034ee
+tinyusb: master f84eafcaa
