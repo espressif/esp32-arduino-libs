@@ -1,6 +1,6 @@
 /*
  * Automatically generated file. DO NOT EDIT.
- * Espressif IoT Development Framework (ESP-IDF) 5.1.1 Configuration Header
+ * Espressif IoT Development Framework (ESP-IDF) 5.1.2 Configuration Header
  */
 #pragma once
 #define CONFIG_SOC_ADC_SUPPORTED 1
@@ -1008,5 +1008,5 @@
 #define CONFIG_WARN_WRITE_STRINGS CONFIG_COMPILER_WARN_WRITE_STRINGS
 #define CONFIG_WPA_MBEDTLS_CRYPTO CONFIG_ESP_WIFI_MBEDTLS_CRYPTO
 #define CONFIG_WPA_MBEDTLS_TLS_CLIENT CONFIG_ESP_WIFI_MBEDTLS_TLS_CLIENT
-#define CONFIG_ARDUINO_IDF_COMMIT "b6a66b7d8c"
+#define CONFIG_ARDUINO_IDF_COMMIT "5c61c89308"
 #define CONFIG_ARDUINO_IDF_BRANCH "release/v5.1"
