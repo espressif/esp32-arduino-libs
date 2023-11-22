@@ -1,3 +1,3 @@
-esp-idf: release/v5.1 5c61c89308
-arduino: master 76782f2c
-tinyusb: master 0f187b4d1
+esp-idf: release/v5.1 3662303f31
+arduino: idf-release/v5.1 55a42a82
+tinyusb: master 460a8b50a
