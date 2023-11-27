@@ -31,11 +31,11 @@ dependencies:
       type: service
     version: 1.0.2
   espressif/esp-sr:
-    component_hash: 931a8caf47267598b72348c7be2086c9b764f3a3287553527c9b88923c7349f5
+    component_hash: 3a04ff3977324d7b076bb505829947b0e06c80ec20f72991921de7fa7f229e89
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.5.1
+    version: 1.6.0
   espressif/esp-tflite-micro:
     component_hash: ffe40b7edc5f407f82a55047b7269c036c25106ff830fb9b3231f3b7fecb4915
     source:
@@ -43,17 +43,17 @@ dependencies:
       type: service
     version: 1.2.0
   espressif/esp-zboss-lib:
-    component_hash: f432e403fad80e2fa9cbae5631da7406796e4a52b2ee6233937e90eabbb65182
+    component_hash: 98b68ccd1540e3d0d1884eb134951de66752bde85eb826a885021fa3a54517bf
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.0.3
+    version: 1.0.5
   espressif/esp-zigbee-lib:
-    component_hash: fd768b7d4aa5363d32d9afe1f5eabab23240a220fba5884e9041a4db0dfd9e44
+    component_hash: 44ae761cec4adcfcc198db4785a9415703b66b78f0a0e96ebec5cbde2045cc6a
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.0.4
+    version: 1.0.5
   espressif/esp32-camera:
     component_hash: eadbec1d37fc354741dae3005ef310b73637e731a9da766c6e2f5614a8c59d5b
     source:
