@@ -290,6 +290,7 @@ env.Append(
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "protocomm", "include", "common"),
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "protocomm", "include", "security"),
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "protocomm", "include", "transports"),
+        join(FRAMEWORK_SDK_DIR, "esp32", "include", "protocomm", "include", "crypto", "srp6a"),
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "esp_local_ctrl", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "espcoredump", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32", "include", "espcoredump", "include", "port", "xtensa"),
@@ -379,7 +380,7 @@ env.Append(
 
     CPPDEFINES=[
         "ESP_PLATFORM",
-        ("IDF_VER", '\\"v5.1.2-185-g3662303f31-dirty\\"'),
+        ("IDF_VER", '\\"v5.1.2-292-g4fe15460ab-dirty\\"'),
         ("MBEDTLS_CONFIG_FILE", '\\"mbedtls/esp_config.h\\"'),
         ("SOC_MMU_PAGE_SIZE", 'CONFIG_MMU_PAGE_SIZE'),
         "UNITY_INCLUDE_CONFIG_H",

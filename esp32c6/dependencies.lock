@@ -12,11 +12,11 @@ dependencies:
       type: service
     version: 0.6.0~1
   espressif/esp-dsp:
-    component_hash: 4f1557de48c61be0fffdb92e5299274502fe8779d8c557c3e83cfde13cf33329
+    component_hash: 46498b4973097cac29cfc6a692abef44375ffb7b00b73b3f354124efc626a154
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.4.9
+    version: 1.4.10
   espressif/esp-nn:
     component_hash: b32869798bdb40dec6bc99caca48cd65d42f8a9f506b9ab9c598a076f891ede9
     source:
@@ -84,11 +84,11 @@ dependencies:
       type: service
     version: 1.1.0
   espressif/json_generator:
-    component_hash: 41da0ab732877184092676c50b5f3f3bf37ad783de2f9c27e441944e01b7d51b
+    component_hash: 45033e1c199b13f1c8c1b544fb7d4e2df6a8e3071ebdcb1b22582b61a7974ff2
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.1.1
+    version: 1.1.2
   espressif/json_parser:
     component_hash: d74b81729ad06ec11ff5eb5b1b0d7df1d00e6027fc11471f4b139c70dcf1b1e4
     source:
@@ -108,22 +108,22 @@ dependencies:
       type: service
     version: 0.1.0~1
   espressif/rmaker_common:
-    component_hash: ed9257c3e6d9af5a945e9fcc4e7b9235a56816d53fd42de95b523fe53a4b9b98
+    component_hash: f2616edceccfb48d75da490563809ed332f5c7a9c3e66ed40837f458fac4eaeb
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.4.3
+    version: 1.4.4
   idf:
     component_hash: null
     source:
       type: idf
     version: 5.1.2
   joltwallet/littlefs:
-    component_hash: 4943c7f0932795ef722fa5d846a3bbf52467d87c01fdab054d3161853bb5f275
+    component_hash: 1d8f346fe94debb00483f76d04b6648083f2d3505da811beccdbd0bd1f6c24cd
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.10.2
+    version: 1.11.0
 manifest_hash: 88d2bec33830ff380ab6b881202eeb93b90064e6316264c386bc5c7dbdd3ea0f
 target: esp32c6
 version: 1.0.0
