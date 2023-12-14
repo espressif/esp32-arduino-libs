@@ -119,6 +119,7 @@ env.Append(
         "-u", "pthread_include_pthread_semaphore_impl",
         "-u", "start_app",
         "-u", "__ubsan_include",
+        "-u", "tlsf_set_rom_patches",
         "-u", "__assert_func",
         "-u", "esp_crypto_dpa_prot_include_impl",
         "-u", "app_main",
@@ -365,7 +366,7 @@ env.Append(
 
     CPPDEFINES=[
         "ESP_PLATFORM",
-        ("IDF_VER", '\\"v5.1.2-342-gbcf1645e44-dirty\\"'),
+        ("IDF_VER", '\\"v5.1.2-365-ge60b0235ad-dirty\\"'),
         ("MBEDTLS_CONFIG_FILE", '\\"mbedtls/esp_config.h\\"'),
         ("SOC_MMU_PAGE_SIZE", 'CONFIG_MMU_PAGE_SIZE'),
         "UNITY_INCLUDE_CONFIG_H",
