@@ -550,7 +550,7 @@ typedef struct
      *      - any other failure codes are allowed to be used to provide failure isolation
      */
     esp_err_t (*write)(void *spi_ctx, uint32_t cmd, uint32_t addr, const void *data, uint32_t data_len);
-} eth_spi_custom_driver_t;
+} eth_spi_custom_driver_config_t;
 
 /**
  * @brief Default configuration of the custom SPI driver.
@@ -573,10 +573,10 @@ typedef struct
  *
  */
 typedef struct {
-    int int_gpio_num;                           /*!< Interrupt GPIO number */
-    spi_host_device_t spi_host_id;              /*!< SPI peripheral (this field is invalid when custom SPI driver is defined) */
-    spi_device_interface_config_t *spi_devcfg;  /*!< SPI device configuration (this field is invalid when custom SPI driver is defined) */
-    eth_spi_custom_driver_t custom_spi_driver;  /*!< Custom SPI driver definitions */
+    int int_gpio_num;                                   /*!< Interrupt GPIO number */
+    spi_host_device_t spi_host_id;                      /*!< SPI peripheral (this field is invalid when custom SPI driver is defined) */
+    spi_device_interface_config_t *spi_devcfg;          /*!< SPI device configuration (this field is invalid when custom SPI driver is defined) */
+    eth_spi_custom_driver_config_t custom_spi_driver;   /*!< Custom SPI driver definitions */
 } eth_dm9051_config_t;
 
 /**
@@ -588,7 +588,7 @@ typedef struct {
         .int_gpio_num = 4,                      \
         .spi_host_id = spi_host,                \
         .spi_devcfg = spi_devcfg_p,             \
-        .custom_spi_driver = ETH_DEFAULT_SPI, \
+        .custom_spi_driver = ETH_DEFAULT_SPI,   \
     }
 
 /**
@@ -610,10 +610,10 @@ esp_eth_mac_t *esp_eth_mac_new_dm9051(const eth_dm9051_config_t *dm9051_config, 
  *
  */
 typedef struct {
-    int int_gpio_num;                           /*!< Interrupt GPIO number */
-    spi_host_device_t spi_host_id;              /*!< SPI peripheral (this field is invalid when custom SPI driver is defined)*/
-    spi_device_interface_config_t *spi_devcfg;  /*!< SPI device configuration (this field is invalid when custom SPI driver is defined)*/
-    eth_spi_custom_driver_t custom_spi_driver;  /*!< Custom SPI driver definitions */
+    int int_gpio_num;                                   /*!< Interrupt GPIO number */
+    spi_host_device_t spi_host_id;                      /*!< SPI peripheral (this field is invalid when custom SPI driver is defined)*/
+    spi_device_interface_config_t *spi_devcfg;          /*!< SPI device configuration (this field is invalid when custom SPI driver is defined)*/
+    eth_spi_custom_driver_config_t custom_spi_driver;   /*!< Custom SPI driver definitions */
 } eth_w5500_config_t;
 
 /**
@@ -647,10 +647,10 @@ esp_eth_mac_t *esp_eth_mac_new_w5500(const eth_w5500_config_t *w5500_config, con
  *
  */
 typedef struct {
-    int int_gpio_num;                           /*!< Interrupt GPIO number */
-    spi_host_device_t spi_host_id;              /*!< SPI peripheral (this field is invalid when custom SPI driver is defined) */
-    spi_device_interface_config_t *spi_devcfg;  /*!< SPI device configuration (this field is invalid when custom SPI driver is defined) */
-    eth_spi_custom_driver_t custom_spi_driver;  /*!< Custom SPI driver definitions */
+    int int_gpio_num;                                   /*!< Interrupt GPIO number */
+    spi_host_device_t spi_host_id;                      /*!< SPI peripheral (this field is invalid when custom SPI driver is defined) */
+    spi_device_interface_config_t *spi_devcfg;          /*!< SPI device configuration (this field is invalid when custom SPI driver is defined) */
+    eth_spi_custom_driver_config_t custom_spi_driver;   /*!< Custom SPI driver definitions */
 } eth_ksz8851snl_config_t;
 
 /**
@@ -659,10 +659,10 @@ typedef struct {
  */
 #define ETH_KSZ8851SNL_DEFAULT_CONFIG(spi_host, spi_devcfg_p) \
     {                                               \
-        .int_gpio_num = 4,                          \
+        .int_gpio_num = 14,                         \
         .spi_host_id = spi_host,                    \
         .spi_devcfg = spi_devcfg_p,                 \
-        .custom_spi_driver = ETH_DEFAULT_SPI,     \
+        .custom_spi_driver = ETH_DEFAULT_SPI,       \
     }
 
 /**
