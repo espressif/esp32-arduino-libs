@@ -1,7 +1,7 @@
 lib-builder: master 2fcb387
-esp-idf: release/v5.1 fa7383162f
-arduino: idf-release/v5.1 42a04cdb
-tinyusb: master 7c181c4e9
+esp-idf: release/v5.1 b38ee33b6d
+arduino: idf-release/v5.1 000abbaa
+tinyusb: master b9be733c3
 chmorgan__esp-libhelix-mp3: 1.0.3
 espressif__cbor: 0.6.0~1
 espressif__esp-dl:
@@ -24,4 +24,4 @@ espressif__json_parser: 1.0.3
 espressif__mdns: 1.2.1
 espressif__qrcode: 0.1.0~1
 espressif__rmaker_common: 1.4.4
-joltwallet__littlefs: 1.11.0
+joltwallet__littlefs: 1.12.0
