@@ -12,12 +12,12 @@ dependencies:
       type: service
     version: 0.6.0~1
   espressif/esp-dl:
-    component_hash: f534c2d79cb38fe1d00c310d3c207a0a053d7d9b9c55db1fb8d0a5db1fbc9b8f
+    component_hash: e76bb265f11620a0ce6100c7d513a9f632e2b8b3046e63d5810c4c134ca869ee
     source:
       git: https://github.com/espressif/esp-dl.git
       path: .
       type: git
-    version: 79034eeb6a98e5dd896c1bf8e87403d562460078
+    version: 6933e459e6099f110a590f08cc9454306e54fc74
   espressif/esp-dsp:
     component_hash: 46498b4973097cac29cfc6a692abef44375ffb7b00b73b3f354124efc626a154
     source:
