@@ -80,17 +80,17 @@ dependencies:
       type: service
     version: 1.0.1
   espressif/esp_rainmaker:
-    component_hash: fc77826332b835fa522c9cd835bb89253af618dfd805b7515f431b6e31ed6328
+    component_hash: 232425d1c9b9dbdaa5c109b3e359fba0e6956e35fcf22725f07ed7e4389e1191
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.0.0
+    version: 1.1.0
   espressif/esp_schedule:
-    component_hash: 8813d5bd0bef51ee091b05c9493a2968ca238f5b64b9273ab5d42a6884d19c11
+    component_hash: 2cbc7e2584f523d10fbfb4ecb7d25c07fa7d7757ab23d7a127494b1a58131ffe
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.0.1
+    version: 1.1.0
   espressif/esp_secure_cert_mgr:
     component_hash: a20007d67e65a000670ab77e45d7554c943eb8dcb0abeada0a57dd9adac3a703
     source:
