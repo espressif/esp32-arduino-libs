@@ -252,7 +252,7 @@ typedef ZB_PACKED_PRE struct zb_aps_hdr_s
   zb_uint8_t block_num;         /*!< Fragmentation: block number. */
   zb_uint8_t block_ack;         /*!< Fragmentation: block ack. */
   zb_uint8_t radius;            /*!< radius from nwk header */
-  zb_uint8_t align[3];
+  zb_uint8_t align[7];
 } ZB_PACKED_STRUCT zb_aps_hdr_t;
 
 
@@ -262,7 +262,7 @@ typedef ZB_PACKED_PRE struct zb_aps_hdr_s
     Also used as a parameter in different APS calls.
  */
 typedef zb_aps_hdr_t zb_apsde_data_indication_t;
-ZB_ASSERT_IF_NOT_ALIGNED_TO_4(zb_apsde_data_indication_t);
+ZB_ASSERT_IF_NOT_ALIGNED_TO_16(zb_apsde_data_indication_t);
 
 /** @} */ /* APS data service */
 /** @} */
@@ -512,6 +512,17 @@ zb_uint8_t zb_aps_get_max_buffer_size(zb_uint16_t short_addr);
  */
 typedef void (*zb_aps_user_payload_callback_t)(zb_uint8_t param);
 
+/**
+ * @brief NLDE-DATA.indication data callback
+ *
+ * @param[in] param index of buffer with an APS indication
+ *
+ * @return
+ *    - true: Processed
+ *    - false: Not processed
+*/
+typedef zb_bool_t (*zb_aps_indication_data_callback_t)(zb_uint8_t param);
+
 /*!
  * @brief
  * APS user payload transmission status
@@ -580,6 +591,13 @@ zb_uint8_t *zb_aps_get_aps_payload(zb_uint8_t param, zb_uint8_t *aps_payload_siz
  * @param cb - pointer to a callback
  */
 void zb_aps_set_user_data_tx_cb(zb_aps_user_payload_callback_t cb);
+
+/**
+ * @brief Set callback to notify information of APS frame
+ *
+ * @param cb - pointer to a callback
+ */
+void zb_aps_set_indication_data_rx_cb(zb_aps_indication_data_callback_t cb);
 
 /*!
  * @brief Set callback to be called when ZDO command packet is sent.
