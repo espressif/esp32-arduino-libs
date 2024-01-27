@@ -12,12 +12,12 @@ dependencies:
       type: service
     version: 0.6.0~1
   espressif/esp-dl:
-    component_hash: e76bb265f11620a0ce6100c7d513a9f632e2b8b3046e63d5810c4c134ca869ee
+    component_hash: cee40f76c002b578f581c654e60a2de7ae066f3d40110d95a2b96ceb2f74c9a2
     source:
       git: https://github.com/espressif/esp-dl.git
       path: .
       type: git
-    version: 6933e459e6099f110a590f08cc9454306e54fc74
+    version: 19d377eb47230bc101fc159086b0cabbdf6f17b0
   espressif/esp-dsp:
     component_hash: 46498b4973097cac29cfc6a692abef44375ffb7b00b73b3f354124efc626a154
     source:
@@ -49,12 +49,12 @@ dependencies:
       type: service
     version: 1.0.9
   espressif/esp32-camera:
-    component_hash: eadbec1d37fc354741dae3005ef310b73637e731a9da766c6e2f5614a8c59d5b
+    component_hash: 52bbb0157c5b8445e37eb216e861faab8a5ec658e2fcc75c4f90e67c03db234d
     source:
       git: https://github.com/espressif/esp32-camera.git
       path: .
       type: git
-    version: dba8da9898928d9808d57a0b0cdcde9f130ed8fe
+    version: 984999f26b41a7e62bbcad8b521a696abbce2626
   espressif/esp_diag_data_store:
     component_hash: 8849195251dbb8a2d7268335277cfa310cef36e4ac1e90cd59ad3be4269a30d7
     source:
@@ -116,11 +116,11 @@ dependencies:
       type: service
     version: 1.2.1
   espressif/qrcode:
-    component_hash: c7b5970795ae7a647e40ed8c8576a947903c0e68ba86cd59cc772d346ec06238
+    component_hash: 3b493771bc5d6ad30cbf87c25bf784aada8a08c941504355b55d6b75518ed7bc
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 0.1.0~1
+    version: 0.1.0~2
   espressif/rmaker_common:
     component_hash: f2616edceccfb48d75da490563809ed332f5c7a9c3e66ed40837f458fac4eaeb
     source:

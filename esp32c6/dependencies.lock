@@ -102,11 +102,11 @@ dependencies:
       type: service
     version: 1.2.1
   espressif/qrcode:
-    component_hash: c7b5970795ae7a647e40ed8c8576a947903c0e68ba86cd59cc772d346ec06238
+    component_hash: 3b493771bc5d6ad30cbf87c25bf784aada8a08c941504355b55d6b75518ed7bc
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 0.1.0~1
+    version: 0.1.0~2
   espressif/rmaker_common:
     component_hash: f2616edceccfb48d75da490563809ed332f5c7a9c3e66ed40837f458fac4eaeb
     source:
