@@ -55,12 +55,12 @@ dependencies:
       type: service
     version: 1.0.9
   espressif/esp32-camera:
-    component_hash: 52bbb0157c5b8445e37eb216e861faab8a5ec658e2fcc75c4f90e67c03db234d
+    component_hash: 0e06d18f0327b81be882be9756e8df7e70215678a57a149b2922b9c82dd24c81
     source:
       git: https://github.com/espressif/esp32-camera.git
       path: .
       type: git
-    version: 984999f26b41a7e62bbcad8b521a696abbce2626
+    version: f0bb42917cddcfba2c32c2e2fb2875b4fea11b7a
   espressif/esp_diag_data_store:
     component_hash: 8849195251dbb8a2d7268335277cfa310cef36e4ac1e90cd59ad3be4269a30d7
     source:
@@ -139,11 +139,11 @@ dependencies:
       type: idf
     version: 5.1.2
   joltwallet/littlefs:
-    component_hash: f7813d2c2ddde8bc74cd9d044f063d758672f8504ca56132f518ff1438c9a051
+    component_hash: 86bd245966dc5618d9513959bae9a102200f4ead1a31140905b4b48413ae3816
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.13.0
+    version: 1.14.0
 manifest_hash: 8dc52758a196f801c65748e1e4062f3d5654eb5403490f6a3af5edade61de47a
 target: esp32s3
 version: 1.0.0
