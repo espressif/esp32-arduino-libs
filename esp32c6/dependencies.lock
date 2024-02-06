@@ -30,17 +30,17 @@ dependencies:
       type: service
     version: 1.2.0
   espressif/esp-zboss-lib:
-    component_hash: d862969a8276cf71e276061332d340a7b6c8bb29c4c2cf6f109c8ddd8d21c231
+    component_hash: 1dafc0b5026db0c6bdf52a7970e681aab539836069229d2a0dca72de6f8c3380
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.0.9
+    version: 1.1.0
   espressif/esp-zigbee-lib:
-    component_hash: 98f2d5907d80514d8722f3f5b751a18f95c977f26d5f8c6fb6642035952e5416
+    component_hash: 9de396e73de20f64376a4da431c4998fce586c5938523b31fb790d2a14eb3b51
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.0.9
+    version: 1.1.0
   espressif/esp_diag_data_store:
     component_hash: 8849195251dbb8a2d7268335277cfa310cef36e4ac1e90cd59ad3be4269a30d7
     source:
@@ -108,11 +108,11 @@ dependencies:
       type: service
     version: 0.1.0~2
   espressif/rmaker_common:
-    component_hash: f2616edceccfb48d75da490563809ed332f5c7a9c3e66ed40837f458fac4eaeb
+    component_hash: 021c02465e4996dd3292db36ea47b5e3122e7e2d3514797735a96bc12598b44f
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.4.4
+    version: 1.4.5
   idf:
     component_hash: null
     source:
