@@ -37,17 +37,17 @@ dependencies:
       type: service
     version: 1.2.0
   espressif/esp-zboss-lib:
-    component_hash: 1dafc0b5026db0c6bdf52a7970e681aab539836069229d2a0dca72de6f8c3380
+    component_hash: a9e17babb2d43edc4bb6bc320f88560860122ac97e8fd72d7d5d9b3cd1578607
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.1.0
+    version: 1.1.1
   espressif/esp-zigbee-lib:
-    component_hash: 9de396e73de20f64376a4da431c4998fce586c5938523b31fb790d2a14eb3b51
+    component_hash: a1a23f47316d2d44b1573459c8cf547da7f2c8ea987154ad8d28235db69f1481
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.1.0
+    version: 1.1.1
   espressif/esp32-camera:
     component_hash: 0e06d18f0327b81be882be9756e8df7e70215678a57a149b2922b9c82dd24c81
     source:
@@ -133,11 +133,11 @@ dependencies:
       type: idf
     version: 5.1.2
   joltwallet/littlefs:
-    component_hash: 86bd245966dc5618d9513959bae9a102200f4ead1a31140905b4b48413ae3816
+    component_hash: 03a21848de65d85a1f914dd6fb9dea5e75e794989d70d185a007e27c3046bb92
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.14.0
-manifest_hash: 1593db632d793685ad6e63dfdfd4a08733209b2c1657dfd90bb3829e860c5ca3
+    version: 1.14.1
+manifest_hash: 93abbf0d9c4a2e31bf02282dc12be496f4060ff5e81db029b5a8d4171537ae9e
 target: esp32
 version: 1.0.0
