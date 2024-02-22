@@ -19,11 +19,11 @@ dependencies:
       type: git
     version: 97e1c52262f5a29c14bdb4ee784b935bd81d1324
   espressif/esp-dsp:
-    component_hash: 46498b4973097cac29cfc6a692abef44375ffb7b00b73b3f354124efc626a154
+    component_hash: 8d9864049f97e4a1e7daafb4536b62b0878efa990a61048a91fab9b7c1b5b4cd
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.4.10
+    version: 1.4.11
   espressif/esp-nn:
     component_hash: b32869798bdb40dec6bc99caca48cd65d42f8a9f506b9ab9c598a076f891ede9
     source:
