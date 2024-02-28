@@ -96,11 +96,11 @@ dependencies:
       type: service
     version: 1.0.3
   espressif/mdns:
-    component_hash: d6665090cf41eb399c184aab6f34234251a773e052fb53ca044dcb576264c646
+    component_hash: d96d277207c4fec77ec290b7a8b0ca4043e10f407df0ff6aa52e54a94f0c54a5
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.2.1
+    version: 1.2.4
   espressif/qrcode:
     component_hash: 3b493771bc5d6ad30cbf87c25bf784aada8a08c941504355b55d6b75518ed7bc
     source:
@@ -124,6 +124,6 @@ dependencies:
       service_url: https://api.components.espressif.com/
       type: service
     version: 1.14.1
-manifest_hash: 2db71b9fbff7b113833bc54b40b03aa995db5abbc86560ba1a02fbd4b83b9080
+manifest_hash: f24108975b6c8d3aa5331a597dd46a10bdd30cc43e08f266fcf7518dba56544e
 target: esp32c6
 version: 1.0.0
