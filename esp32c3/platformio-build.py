@@ -139,7 +139,6 @@ env.Append(
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "esp_hw_support", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "esp_hw_support", "include", "soc"),
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "esp_hw_support", "include", "soc", "esp32c3"),
-        join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "esp_hw_support", "port", "esp32c3"),
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "heap", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "log", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "soc", "include"),
@@ -274,6 +273,7 @@ env.Append(
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "protocomm", "include", "security"),
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "protocomm", "include", "transports"),
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "protocomm", "include", "crypto", "srp6a"),
+        join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "protocomm", "proto-c"),
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "esp_local_ctrl", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "espcoredump", "include"),
         join(FRAMEWORK_SDK_DIR, "esp32c3", "include", "espcoredump", "include", "port", "riscv"),
@@ -358,7 +358,7 @@ env.Append(
 
     CPPDEFINES=[
         "ESP_PLATFORM",
-        ("IDF_VER", '\\"v5.1.3-1-gc361705ae7-dirty\\"'),
+        ("IDF_VER", '\\"v5.1.3-204-ge3e112e612-dirty\\"'),
         ("MBEDTLS_CONFIG_FILE", '\\"mbedtls/esp_config.h\\"'),
         ("SOC_MMU_PAGE_SIZE", 'CONFIG_MMU_PAGE_SIZE'),
         "UNITY_INCLUDE_CONFIG_H",
