@@ -19,11 +19,11 @@ dependencies:
       type: git
     version: 97e1c52262f5a29c14bdb4ee784b935bd81d1324
   espressif/esp-dsp:
-    component_hash: 8d9864049f97e4a1e7daafb4536b62b0878efa990a61048a91fab9b7c1b5b4cd
+    component_hash: 3e7bbd487f1357a1d4944d0c85966d049501ea281b8a4c7f93f7cfedd5b7f23d
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.4.11
+    version: 1.4.12
   espressif/esp-nn:
     component_hash: b32869798bdb40dec6bc99caca48cd65d42f8a9f506b9ab9c598a076f891ede9
     source:
@@ -43,17 +43,17 @@ dependencies:
       type: service
     version: 1.2.0
   espressif/esp-zboss-lib:
-    component_hash: b7bf691a285ab2bf7ff877082f50de5fba1e903e53352a1fe03326e2c1c636d6
+    component_hash: 5293786c3232bcc200c2e34aeef515ab0564dccda2e8c2613b0bb6b0a6f819a7
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.1.2
+    version: 1.2.0
   espressif/esp-zigbee-lib:
-    component_hash: d667197fd224c4d32e16e26cd3a4f5c9b0aba6f11f635b38fb25512620ce539b
+    component_hash: d9c2e20058b1cd5cc31e9399cf7b939f80e000b3088f9895ba806b4b2217994a
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.1.2
+    version: 1.2.0
   espressif/esp32-camera:
     component_hash: 0e06d18f0327b81be882be9756e8df7e70215678a57a149b2922b9c82dd24c81
     source:
@@ -86,11 +86,11 @@ dependencies:
       type: service
     version: 1.1.0
   espressif/esp_schedule:
-    component_hash: 2cbc7e2584f523d10fbfb4ecb7d25c07fa7d7757ab23d7a127494b1a58131ffe
+    component_hash: 80d3694717a537156f61a072dfe1d1498a2a4f32819a5735bf8a50bcadf79941
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.1.0
+    version: 1.1.1
   espressif/esp_secure_cert_mgr:
     component_hash: a20007d67e65a000670ab77e45d7554c943eb8dcb0abeada0a57dd9adac3a703
     source:
