@@ -40,12 +40,21 @@
 extern "C" {
 #endif
 
-#if !defined(MBEDTLS_GCM_ALT)
+#if defined(MBEDTLS_GCM_NON_AES_CIPHER_SOFT_FALLBACK)
+#define SOFT(name) name##_soft
+#else
+#define SOFT(name) name
+#endif /* MBEDTLS_GCM_NON_AES_CIPHER_SOFT_FALLBACK */
 
+#if defined(MBEDTLS_GCM_ALT)
+#include "gcm_alt.h"
+#endif /* !MBEDTLS_GCM_ALT */
+
+#if !defined(MBEDTLS_GCM_ALT) || defined(MBEDTLS_GCM_NON_AES_CIPHER_SOFT_FALLBACK)
 /**
  * \brief          The GCM context structure.
  */
-typedef struct mbedtls_gcm_context {
+typedef struct SOFT(mbedtls_gcm_context) {
     mbedtls_cipher_context_t MBEDTLS_PRIVATE(cipher_ctx);  /*!< The cipher context used. */
     uint64_t MBEDTLS_PRIVATE(HL)[16];                      /*!< Precalculated HTable low. */
     uint64_t MBEDTLS_PRIVATE(HH)[16];                      /*!< Precalculated HTable high. */
@@ -58,11 +67,7 @@ typedef struct mbedtls_gcm_context {
                                                             #MBEDTLS_GCM_ENCRYPT or
                                                             #MBEDTLS_GCM_DECRYPT. */
 }
-mbedtls_gcm_context;
-
-#else  /* !MBEDTLS_GCM_ALT */
-#include "gcm_alt.h"
-#endif /* !MBEDTLS_GCM_ALT */
+SOFT(mbedtls_gcm_context);
 
 /**
  * \brief           This function initializes the specified GCM context,
@@ -349,6 +354,9 @@ int mbedtls_gcm_finish(mbedtls_gcm_context *ctx,
  *                  no effect. Otherwise, this must be initialized.
  */
 void mbedtls_gcm_free(mbedtls_gcm_context *ctx);
+
+#endif /* !defined(MBEDTLS_GCM_ALT) || defined(MBEDTLS_GCM_NON_AES_CIPHER_SOFT_FALLBACK) */
+
 
 #if defined(MBEDTLS_SELF_TEST)
 
