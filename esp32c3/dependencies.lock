@@ -30,17 +30,17 @@ dependencies:
       type: service
     version: 1.2.0
   espressif/esp-zboss-lib:
-    component_hash: 5293786c3232bcc200c2e34aeef515ab0564dccda2e8c2613b0bb6b0a6f819a7
+    component_hash: dad55dcf4e9e05892d75c833f621d0421b6b6657c5078fd9cfb2da9a496f9a91
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.2.0
+    version: 1.2.1
   espressif/esp-zigbee-lib:
-    component_hash: d9c2e20058b1cd5cc31e9399cf7b939f80e000b3088f9895ba806b4b2217994a
+    component_hash: 3485a92e8eddeb47dc80ab14e771ea7ae70cdfe72ce1c11216c7df51e4774b2e
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.2.0
+    version: 1.2.1
   espressif/esp_diag_data_store:
     component_hash: 8849195251dbb8a2d7268335277cfa310cef36e4ac1e90cd59ad3be4269a30d7
     source:

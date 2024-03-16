@@ -1,6 +1,6 @@
 lib-builder: master aaf47ab
-esp-idf: release/v5.1 3e526ef774
-arduino: idf-release/v5.1 7b242fb2
+esp-idf: release/v5.1 8af8f5840c
+arduino: idf-release/v5.1 1f77bae1
 tinyusb: master 7c66f9b2a
 chmorgan__esp-libhelix-mp3: 1.0.3
 espressif__cbor: 0.6.0~1
@@ -9,8 +9,8 @@ espressif__esp-dsp: 1.4.12
 espressif__esp-nn: 1.0.2
 espressif__esp-sr: 1.6.1
 espressif__esp-tflite-micro: 1.2.0
-espressif__esp-zboss-lib: 1.2.0
-espressif__esp-zigbee-lib: 1.2.0
+espressif__esp-zboss-lib: 1.2.1
+espressif__esp-zigbee-lib: 1.2.1
 espressif__esp32-camera:
 espressif__esp_diag_data_store: 1.0.1
 espressif__esp_diagnostics: 1.1.0
