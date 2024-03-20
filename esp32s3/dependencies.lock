@@ -31,11 +31,11 @@ dependencies:
       type: service
     version: 1.0.2
   espressif/esp-sr:
-    component_hash: 04b360c8eb79e02c204d9a2c3683f7bc20077752a01e51f636dd376db0ef1e82
+    component_hash: f2e0e9316ecd263a43f1a0f41578cd363bb41d77b78f8944e0a721232ecb84fc
     source:
       service_url: https://api.components.espressif.com/
       type: service
-    version: 1.6.1
+    version: 1.7.0
   espressif/esp-tflite-micro:
     component_hash: ffe40b7edc5f407f82a55047b7269c036c25106ff830fb9b3231f3b7fecb4915
     source:
