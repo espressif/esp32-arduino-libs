@@ -49,12 +49,12 @@ dependencies:
       type: service
     version: 1.2.1
   espressif/esp32-camera:
-    component_hash: 0e06d18f0327b81be882be9756e8df7e70215678a57a149b2922b9c82dd24c81
+    component_hash: dc49c6f2a43073944b63868a28a896c007eea6f2b1351aa8f018c08b12c73955
     source:
       git: https://github.com/espressif/esp32-camera.git
       path: .
       type: git
-    version: f0bb42917cddcfba2c32c2e2fb2875b4fea11b7a
+    version: bae46be5eb126c46c692a29a953991117f68336b
   espressif/esp_diag_data_store:
     component_hash: 8849195251dbb8a2d7268335277cfa310cef36e4ac1e90cd59ad3be4269a30d7
     source:
